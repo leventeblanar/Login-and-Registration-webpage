@@ -5,22 +5,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/jpg" href="Images/webicon_small.jpg">
-    <title>Practice session</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login and Registration | Levi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- https://youtu.be/p1GmFCGuVjw?si=E0YCLy_UnX9JtFBo&t=880 -->
+
 <body>
+    <header>
+        <h2 class="logo">The Brew Calculator</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
 
-    <button onclick="doSomething()" style="font-size: 25px; background-color: grey; color:lightblue; border-radius: 10px">click me</button>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-registrer">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 
-    <p id="greeting">Hello</p>
-
-    <script>
-        function doSomething(){
-            document.getElementById("greeting").innerHTML = "Goodbye";
-        }
-    </script>
-
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 
