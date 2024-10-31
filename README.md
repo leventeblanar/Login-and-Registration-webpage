@@ -1,4 +1,6 @@
 # Login and Registration webpage
- Online GitHub training
 
-I'm editing this to practice pushes,commits and shit.
+This project is to learn and practice the process of creating a login and registration webpage using HTML, CSS and Javascript. 
+
+
+
